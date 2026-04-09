@@ -13,7 +13,7 @@ Script di installazione e configurazione per l'ambiente Attack&Defense
 cp adinstall.conf.example adinstall.conf
 vim adinstall.conf
 chmod +x ADInstall.sh
-sudo ./ADInstall.refactored.sh ./adinstall.conf
+sudo ./ADInstall.sh ./adinstall.conf
 ```
 
 ## Struttura del `.conf`
