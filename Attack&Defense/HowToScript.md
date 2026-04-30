@@ -2,9 +2,7 @@
 ---
 Scriptare un *exploit* durante una competizione AD, risulta pressochè fondamentale. Questo tutorial (consideratelo più una checklist) serve ad evidenziare tutti i requisiti necessari affinchè lo script possa funzionare correttamente, supponendo di utilizzare come servizio per l'invio delle flag **S4dFarm**.
 ### Shebang
-
 ---
-
 La riga **shebang** (#!) è la primissima riga negli script Unix/Linux che specifica l'interprete. lo script ```start_sploit.py``` permette di scrivere l'exploit con il linguaggio di programmazione che si preferisce. per *python* lo shebang da utilizzare è:
 
 ```#!/usr/bin/env pyhton3```
