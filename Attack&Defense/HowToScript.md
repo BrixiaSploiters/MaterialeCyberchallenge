@@ -7,6 +7,8 @@ La riga **shebang** (#!) è la primissima riga negli script Unix/Linux che speci
 
 ### Ip come argomento in ingresso
 ```start_sploit.py``` esegue periodicamente l’exploit su ciascuna *VulnBox* presente nella rete di gioco. Per specificare quale macchina attaccare è necessario fornire l’indirizzo IP; di conseguenza, lo script di attacco deve essere in grado di accettare argomenti da riga di comando. Per rendere possibile questa cosa possiamo usare ```sys.argv[1]```.
+
+
 ### Includere il *flush*
 Quando stampiamo qualcosa, il sistema operativo (e il runtime) utilizza un meccanismo intermedio chiamato **buffering dell’output**, per motivi di ottimizzazione: i dati non vengono scritti immediatamente, ma accumulati in un buffer fino a quando questo non si riempie o il programma termina. Il flush permette di svuotare immediatamente tutto il buffer senza aspettare. Senza il nostro caro e amato *flush*, quindi, esiste la possibilità che una flag rimanga all’interno del *buffer* e non venga mai effettivamente inviata. Per risolvere questo problema, È sufficiente passare l’argomento ```flush=True``` alla funzione di stampa che contiene la flag.
 
