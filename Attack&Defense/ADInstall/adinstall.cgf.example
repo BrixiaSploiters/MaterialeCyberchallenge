@@ -1,0 +1,21 @@
+# ==========================================
+# File di configurazione CTF A&D
+# ==========================================
+
+# Rete e Macchina
+VM_IP="10.60.9.1"
+
+# Autenticazione Tulip (Dashboard)
+USERNAME="ctfuser"
+USER_PASSWORD="ctfpassword"
+
+# Servizi da monitorare/patchare
+# Formato: "NomeServizio1:Porta1 NomeServizio2:Porta2"
+SERVIZI="Servizio1:8001 Servizio2:8002"
+
+# Configurazione S4DFarm
+SCOREBOARD_IP="10.10.0.1"
+FLAG_SUBMIT_URL="http://10.10.0.1:8080/flags"
+S4D_PASSWORD="passwordS4D"
+TEAM_TOKEN="token1234"
+NUMBER_OF_TEAMS="44"
